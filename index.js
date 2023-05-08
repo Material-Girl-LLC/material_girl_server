@@ -9,6 +9,8 @@ const init = async () => {
         host: 'localhost'
     });
 
+    await server.register(require('myPlugin'));
+
     server.route({
         method: 'GET',
         path: '/',

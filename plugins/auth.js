@@ -12,7 +12,7 @@ const myPlugin = {
             path: '/test',
             handler: function (request, h) {
 
-                return 'hello, world';
+                return 'im testing';
             }
         });
 
