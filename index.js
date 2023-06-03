@@ -2,6 +2,8 @@
 
 const Hapi = require('@hapi/hapi');
 
+const myPlugin = require('./plugins/myPlugin');
+
 const init = async () => {
 
     const server = Hapi.server({
@@ -9,7 +11,7 @@ const init = async () => {
         host: 'localhost'
     });
 
-    await server.register(require('myPlugin'));
+    await server.register(myPlugin);
 
     server.route({
         method: 'GET',

@@ -1,6 +1,6 @@
 'use strict';
 
-const myPlugin = {
+exports.plugin = {
     name: 'myPlugin',
     version: '1.0.0',
     register: async function (server, options) {
@@ -9,14 +9,14 @@ const myPlugin = {
 
         server.route({
             method: 'GET',
-            path: '/test',
+            path: '/myPlugin',
             handler: function (request, h) {
 
-                return 'im testing';
+                return "this is my test plugin!";
             }
         });
 
         // etc ...
-        await someAsyncMethods();
+        // await someAsyncMethods();
     }
 };
