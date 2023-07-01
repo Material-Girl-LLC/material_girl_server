@@ -1,23 +1,25 @@
 {
   "name": "material-girl-node",
   "version": "1.0.0",
-  "description": "Node-based backend of material-girl website",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "test",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://gitlab.com/material-girl/material-girl-node.git"
   },
-  "author": "Mathew Schwartzman",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://gitlab.com/material-girl/material-girl-node/issues"
   },
   "homepage": "https://gitlab.com/material-girl/material-girl-node#readme",
   "dependencies": {
-    "@hapi/hapi": "^21.3.1"
+    "hapi": "^18.1.0",
+    "hapi-mongodb": "^10.0.3"
   }
 }
