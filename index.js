@@ -1,8 +1,9 @@
 'use strict';
 
-const Hapi = require('@hapi/hapi');
+const Hapi = require('hapi');
 
-const myPlugin = require('./plugins/myPlugin');
+// const myPlugin = require('./plugins/myPlugin');
+const materials_routes = require('./routes/materials');
 
 const init = async () => {
 
@@ -11,7 +12,19 @@ const init = async () => {
         host: 'localhost'
     });
 
-    await server.register(myPlugin);
+    await server.register({
+        plugin: require('hapi-mongodb'),
+        options: {
+            url: 'mongodb://localhost:27017/materialDB',
+            settings: {
+                useUnifiedTopology: true
+            },
+            decorate: true
+        }
+    });
+
+    // await server.register(myPlugin);
+    await server.register(materials_routes);
 
     server.route({
         method: 'GET',
