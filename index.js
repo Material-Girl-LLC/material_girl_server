@@ -1,7 +1,6 @@
 'use strict';
 
 const Hapi = require('hapi');
-const Hapi = require('hapi');
 
 // const myPlugin = require('./plugins/myPlugin');
 const materials_routes = require('./routes/materials');
