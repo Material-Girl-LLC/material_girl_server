@@ -1,11 +1,38 @@
 [
     {
-        "name": "steel",
-        "parent": "6521c8faf77cc4e27d1d6248",
-        "id": "6521c40ace5ce1cd7616b6e7"
-    },
-    {
         "name": "metal",
         "id": "6521c8faf77cc4e27d1d6248"
+    },
+    {
+        "name": "Aluminum 6061",
+        "aliases": ["A96061"],
+        "parent": "asdf",
+        "properties": [
+            {
+                "key": "Tensile Strength",
+                "value": 5,
+                "units": "sponges"
+            },
+            {
+                "key": "Elongation at Break",
+                "value": 1,
+                "units": "meters"
+            }
+        ]
+    },
+    {
+        "name": "Black Oak",
+        "aliases": [],
+        "parent": "asdf",
+        "properties": [
+            {
+                "key": "Tensile Strength",
+                "value": 5,
+                "units": "sponges"
+            }
+        ]
+    },
+    {
+        "name": "Wood"
     }
 ]
