@@ -1,0 +1,23 @@
+{
+    "priority_name": "aluminum 660",
+    "scientific_name": "",
+    "other_names": [
+        "shiny metal"
+    ],
+    "mechanical_properties": [
+        {
+            "name": "tensile_strength",
+            "units":"psi",
+            "value": 1
+        }
+    ],
+    "chemical_properties": [
+        {
+            "name": "melting"
+        }
+    ],
+    "thermal_properties": [],
+    "optical_properties": [],
+    "electromagnetic_properties": [],
+    
+}
