@@ -1,0 +1,14 @@
+[Unit]
+Description=Material Girl backend service
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=mcschwartzman
+ExecStart=/home/mcschwartzman/git/material_girl_server/scripts/start_server.sh
+
+[Install]
+WantedBy=multi-user.target
