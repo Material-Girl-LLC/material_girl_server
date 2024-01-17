@@ -9,6 +9,10 @@ You'll also want mongo 4.4 community edition. Follow the below instructions to i
 - Node Version Manager: https://github.com/nvm-sh/nvm
 - Mongo 4.4 Community: https://www.mongodb.com/docs/v4.4/tutorial/install-mongodb-on-ubuntu/
 
+Alternatively if you'd rather run mongo as a docker container, you can use this command:
+
+```docker run --name material-mongo -p 27017:27017 -d mongo:4.4```
+
 ## Getting started
 
 Once you've installed the prerequisites, you can start the app like a normal node app and get developing!
