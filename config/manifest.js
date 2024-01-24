@@ -32,11 +32,12 @@ const manifest = {
   
     register: {
       plugins: [
-        {plugin: 'hapi-auth-jwt2' },
+        { plugin: 'hapi-auth-jwt2' },
         { plugin: 'hapi-mongodb', options:
           {
             url: mongodb_URL,
             settings: {
+              poolSize: 20,
               useNewUrlParser: true,
               useUnifiedTopology: true
             },
