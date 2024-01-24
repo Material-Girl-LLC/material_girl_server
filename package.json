@@ -21,7 +21,7 @@
   "dependencies": {
     "@hapi/glue": "^7.0.0",
     "@hapi/hapi": "^19.2.0",
-    "hapi-auth-jwt2": "^10.2.0",
+    "hapi-auth-jwt2": "^9.0.1",
     "hapi-mongodb": "^9.0.3"
   }
 }
