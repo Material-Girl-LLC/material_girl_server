@@ -1,8 +1,8 @@
 {
     "priority_name": "aluminum 660",
     "scientific_name": "",
+    "parent":"",
     "other_names": [
-        "shiny metal"
     ],
     "mechanical_properties": [
         {
@@ -13,11 +13,14 @@
     ],
     "chemical_properties": [
         {
-            "name": "melting"
+            "name": "melting_point",
+            "units": "deg C",
+            "value": 50
         }
     ],
     "thermal_properties": [],
     "optical_properties": [],
     "electromagnetic_properties": [],
+    "physics_properties": []
     
 }

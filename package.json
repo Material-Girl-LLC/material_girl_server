@@ -19,9 +19,15 @@
   },
   "homepage": "https://gitlab.com/material-girl/material-girl-node#readme",
   "dependencies": {
+    "@hapi/boom": "^10.0.1",
     "@hapi/glue": "^7.0.0",
     "@hapi/hapi": "^19.2.0",
+<<<<<<< HEAD
     "hapi-auth-jwt2": "^9.0.1",
     "hapi-mongodb": "^9.0.3"
+=======
+    "hapi-auth-jwt2": "^10.5.0",
+    "hapi-mongodb": "^10.0.3"
+>>>>>>> fix: adds sample materials
   }
 }

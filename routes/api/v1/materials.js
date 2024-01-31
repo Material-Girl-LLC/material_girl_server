@@ -15,8 +15,6 @@ exports.plugin = {
             handler: async function (request, h) {
                 const materials = await server.mongo.db.collection('materials').aggregate([]).toArray();
 
-                return {"soup": "tomato"};
-
                 return materials;
             }
         });
@@ -28,12 +26,11 @@ exports.plugin = {
 
                 const payload = request.payload;
 
-                // console.log(payload);
+                console.log(payload);
 
                 const status = await server.mongo.db.collection('materials').insertOne(payload);
-                // const status = "Creating new material";
 
-                return status;
+                return {"code": 200};
 
             }
         });
