@@ -4,23 +4,13 @@
     "parent":"",
     "other_names": [
     ],
-    "mechanical_properties": [
-        {
-            "name": "tensile_strength",
-            "units":"psi",
-            "value": 1
-        }
-    ],
-    "chemical_properties": [
-        {
-            "name": "melting_point",
-            "units": "deg C",
-            "value": 50
-        }
-    ],
-    "thermal_properties": [],
-    "optical_properties": [],
-    "electromagnetic_properties": [],
-    "physics_properties": []
+    "properties":{
+        "mechanical":[],
+        "chemical": [],
+        "thermal": [],
+        "optical": [],
+        "electromagnetic": [],
+        "physics": []
+    }
     
 }
