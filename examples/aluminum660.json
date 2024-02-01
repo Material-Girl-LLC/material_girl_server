@@ -1,11 +1,23 @@
 {
-    "priority_name": "aluminum 660",
+    "name": "aluminum 660",
     "scientific_name": "",
-    "parent":"",
+    "parent":"65baed1634d8c7503bc35184",
     "other_names": [
     ],
+    "patent_holder": "Aluminum 660 Company",
     "properties":{
-        "mechanical":[],
+        "mechanical":[
+            {
+                "name": "Tensile Strength",
+                "units": "Pa",
+                "value": 12
+            },
+            {
+                "name": "Compressive Strength",
+                "units": "Pa",
+                "value": 4
+            }
+        ],
         "chemical": [],
         "thermal": [],
         "optical": [],
