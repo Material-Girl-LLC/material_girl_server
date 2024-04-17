@@ -11,7 +11,7 @@ You'll also want mongo 4.4 community edition. Follow the below instructions to i
 
 Alternatively if you'd rather run mongo as a docker container, you can use this command:
 
-```docker run --name material-mongo -p 27017:27017 -d mongo:4.4```
+```docker run --rm --name material-mongo -p 27017:27017 -d mongo:4.4```
 
 ## Getting started
 
