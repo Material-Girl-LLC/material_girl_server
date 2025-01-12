@@ -1,0 +1,1 @@
+docker build -t material_girl_server-api ..

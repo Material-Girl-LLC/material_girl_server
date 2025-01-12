@@ -10,6 +10,31 @@ services:
       NODE_ENV: "development"
     depends_on:
       - database
+    networks:
+      staticbridge:
+        ipv4_address: 10.1.0.3
   database:
+    image: mongo:4.4
+    restart: "always"
+    ports:
+      - 27017:27017
+    networks:
+      staticbridge:
+        ipv4_address: 10.1.0.2
+  # ui:
+  #   build: ../material_girl_client
+  #   restart: "always"
+  #   ports:
+  #     - 3000:3000
+  #   networks:
+  #     - material_girl_network
+
+networks:
+  staticbridge:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.1.0.0/16
+          gateway: 10.1.0.1
   
     

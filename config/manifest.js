@@ -18,7 +18,7 @@ const envKey = (key) => {
     return configuration[env][key];
   };
 
-const mongodb_URL = 'mongodb://localhost:27017/materialGirlDB';
+const mongodb_URL = 'mongodb://10.1.0.2:27017/materialGirlDB';
 
 const manifest = {
     server: {

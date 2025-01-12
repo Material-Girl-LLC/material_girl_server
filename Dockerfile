@@ -36,6 +36,6 @@ COPY ./package.json .
 RUN npm install
 
 ENV NODE_ENV='development'
-EXPOSE 3030
+EXPOSE 3000
 
 ENTRYPOINT ["npm", "start"]
