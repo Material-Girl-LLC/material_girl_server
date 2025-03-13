@@ -18,7 +18,7 @@ const envKey = (key) => {
     return configuration[env][key];
   };
 
-const mongodb_URL = 'mongodb://10.1.0.2:27017/materialGirlDB';
+const mongodb_URL = 'mongodb://127.0.0.1:27017/materialGirlDB';
 
 const manifest = {
     server: {
@@ -45,6 +45,12 @@ const manifest = {
           }
         },
         { plugin: './routes/api/v1/materials', options: {},
+          routes: {
+            prefix: envKey('prefix') + '/api/v1'
+          }
+        },
+        {
+          plugin: './routes/api/v1/login', options: {},
           routes: {
             prefix: envKey('prefix') + '/api/v1'
           }
