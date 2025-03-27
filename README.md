@@ -13,6 +13,10 @@ Alternatively if you'd rather run mongo as a docker container, you can use this 
 
 ```docker run --rm --name material-mongo -p 27017:27017 -d mongo:4.4```
 
+Or with postgres (newer database schema)
+
+```docker run --rm --name material-postgres -p 5432:5432 -d postgres:12```
+
 ## Getting started
 
 Once you've installed the prerequisites, you can start the app like a normal node app and get developing!
