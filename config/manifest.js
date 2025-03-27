@@ -54,6 +54,12 @@ const manifest = {
           routes: {
             prefix: envKey('prefix') + '/api/v1'
           }
+        },
+        {
+          plugin: './routes/api/v1/login', options: {},
+          routes: {
+            prefix: envKey('prefix') + '/api/v1'
+          }
         }
       ]
     }
